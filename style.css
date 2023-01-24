@@ -1,0 +1,37 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.body {
+    background-color: blue;
+    color: rgb(11, 0, 0);
+}
+
+#div {
+    width: 100%;
+    height: 33px;
+}
+
+.div-left-side {
+    float: left;
+    background-color: #fff;
+    width: 250px;
+    height: 310px;
+    border-radius: 11px;
+    position: relative;
+    left: 22px;
+}
+
+.div-right-side {
+    float: right;
+    position: relative;
+    right: 22px;
+    /* border-radius: 11px; */
+}
+
+.home {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}

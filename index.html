@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/icon-person-00.ico">
+    <!-- ........................................... -->
+    <!-- MBD CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS files, download from mdbootstrap.com -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+
+
+
+<body class="body">
+
+    <div id="div"></div>
+    <!-- <header> </header> -->
+
+    <!-- ................ navbar ............... -->
+    <nav class="navbar bg-body-tertiary fixed">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="icons/icon-person-00.ico" width="44" alt="">
+                <b style="margin-left:18px;"> Portfolio</b>
+            </a>
+
+            <a class="navbar-brand " href="bio.html" style="display:inline-block;margin-left:11px;color:blue;background-color:white;padding:7px 11px 2px 11px;border-radius:50%;border:4px solid blue;" target="_blank">
+                <h2><b><em>Bio</em></b></h2>
+            </a>
+            <div style="display:inline-block;padding-top:10px;">
+
+                <span class="navbar-brand" href="show-photos.html" style="display:inline-block;margin-left:11px;color:yellow;background-color:blue;padding:5px;padding:5px 5px 0px 5px;border-radius:33px;">
+                    <h2><em><b>Galleries:</b></em></h2>
+                </span>
+
+                <a class="navbar-brand " href="show-photos.html" style="display:inline-block;margin-left:11px;" target="_blank">
+                    <h5>Photos</h5>
+                </a>
+                <a class="navbar-brand " href="show-paints.html" style="display:inline-block;padding-left:10px;" target="_blank">
+                    <h5>Paints</h5>
+                </a>
+            </div>
+            <!-- ......... -->
+
+            <!-- ......... SideMenu ........... -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" style=" background-color: rgb(148, 148, 248);">
+                    <h3 class="offcanvas-title" id="offcanvasNavbarLabel"> Portfolio</h3>
+
+                    <!-- ..................... btn close.................... -->
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background-color: rgb(190, 190, 245);">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+
+                        <!-- ........ input Search ........ -->
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2 " type="search" placeholder="Search " aria-label="Search ">
+                            <button class="btn btn-outline-success" type="submit"><b>Search</b></button>
+                        </form>
+
+                        <hr>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="new-account.html " target="_blank ">
+                                <h6> <b>New account</b></h6>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="sign-in.html " target="_blank ">
+                                <h6> <b>Sign in</b></h6>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page " href="index.html " target="_blank ">
+                                <h6> <b>Home</b></h6>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="about.html " target="_blank ">
+                                <h6><b>About</b></h6>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="contacts.html " target="_blank ">
+                                <h6> <b>Contacts</b></h6>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="show-photos.html " target="_blank ">
+                                <h6><b>Photos</b></h6>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="show-paints.html " target="_blank ">
+                                <h6> <b>Paints</b></h6>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="index.html ">
+                                <h6><b>Sign out</b></h6>
+                            </a>
+                        </li>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- text box -->
+    <div id="div "></div>
+
+    <!-- ...... Art painting photography ...... -->
+    <div><br>
+        <div style="float:left;position:relative; left:100px;border-left:3px solid yellow;border-bottom:3px solid yellow;border-radius:12px;padding-left:15px;">
+            <h1 style="color:yellow;font-size:67px;padding-left:20px;">
+                <em>Hi, I'm Hussin ... </em></h1>
+
+            <h3 style=" color:yellow;font-size:37px;font-weight:bolder;padding:15px;">If you like art painting and photography ..</h3>
+            <h4 style="color:yellow;font-size:37px;font-weight:bolder;padding:20px;"> <em>you are in the right place.</em></h4>
+        </div>
+        <div style="float:right;position:relative; right:100px; ">
+            <img src="icons/icon-person-00.ico " style="border-radius: 50%; border:5px solid yellow;margin-bottom:33px; " alt=" ">
+        </div>
+
+    </div>
+    <!-- ......... hr ........ -->
+    <!-- <div style="width:100%; height:1px; background-color:yellow;position:relative;top:290px; "></div> -->
+
+
+
+    <!-- ........................ Start marquee ........................... -->
+    <marquee behavior=" " direction="horizontal ">
+        <footer class="text-center text-white " style="border-radius:22px;background-color: blue; ">
+            <!-- Grid container -->
+            <div class="container p-4 ">
+                <!-- Section: Images -->
+                <section class=" ">
+                    <div class="row ">
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0 ">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded " data-ripple-color="light ">
+                                <img src="img/paint-01.jpg " style="border-radius:11px; " class="w-100 " />
+                                <a href="#! ">
+                                    <div class="mask " style="background-color: rgba(251, 251, 251, 0.2); "></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0 ">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded " data-ripple-color="light ">
+                                <img src="img/paint-02.jpg " style="border-radius:11px; " class="w-100 " />
+                                <a href="#! ">
+                                    <div class="mask " style="background-color: rgba(251, 251, 251, 0.2); "></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0 ">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded " data-ripple-color="light ">
+                                <img src="img/paint-03.jpg " style="border-radius:11px; " class="w-100 " />
+                                <a href="#! ">
+                                    <div class="mask " style="background-color: rgba(251, 251, 251, 0.2); "></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0 ">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded " data-ripple-color="light ">
+                                <img src="img/paint-04.jpg " style="border-radius:11px; " class="w-100 " />
+                                <a href="#! ">
+                                    <div class="mask " style="background-color: rgba(251, 251, 251, 0.2); "></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0 ">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded " data-ripple-color="light ">
+                                <img src="img/paint-05.jpg " style="border-radius:11px; " class="w-100 " />
+                                <a href="#! ">
+                                    <div class="mask " style="background-color: rgba(251, 251, 251, 0.2); "></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0 ">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded " data-ripple-color="light ">
+                                <img src="img/paint-06.jpg " style="border-radius:11px; " class="w-100 " />
+                                <a href="#! ">
+                                    <div class="mask " style="background-color: rgba(251, 251, 251, 0.2); "></div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- .................................. -->
+
+                    </div>
+                </section>
+                <!-- Section: Images -->
+            </div>
+            <!-- Grid container -->
+
+        </footer>
+    </marquee>
+    <!-- ..................... End marquee....................... -->
+
+    <!-- ........................ Sepreate .................. -->
+    <div style="width:100%; height:1px; background-color:yellow;position:relative;top:0px; "></div>
+    <br>
+
+    <!-- .................. End Sepreate .................. -->
+
+    <!-- Googl maps position-->
+    <article>
+        <div style="float:left; ">
+            <h1 style="font-size:55px;text-align:center;color:yellow;position:relative; left:50px;top:150px; "><b><em>Position  >></em></b></h1>
+            <br>
+        </div><br>
+        <div style="position:relative;top:0px;left:18px; ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.6848582424927!2d13.258908685478078!3d32.90649948468049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ca968fcef345c5e!2zMzLCsDU0JzIzLjQiTiAxM8KwMTUnMjQuMiJF!5e0!3m2!1sar!2sly!4v1674199325572!5m2!1sar!2sly "
+                style=" width:900px; height:450px; border:0; border-radius:5%;position:relative; left:110px;top:0px; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+    </article>
+    </div>
+    <br>
+    <!-- Googl maps position-->
+
+    <!-- .............. Social media.................... -->
+    <footer class="bg-light text-center text-white ">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 ">
+            <!-- Section: Social media -->
+            <section class="mb-4 ">
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1 " style="background-color: #3b5998; " href="https://www.facebook.com/h1.k2.7/ " target="_blank " role="button "><i class="fab fa-facebook-f "></i
+                ></a>
+
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1 " style="background-color: #55acee; " href="#! " target="_blank " role="button "><i class="fab fa-twitter "></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1 " style="background-color: #dd4b39; " href="https://www.google.com/ " target="_blank " role="button "><i class="fab fa-google "></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1 " style="background-color: #ac2bac; " href="#! " target="_blank " role="button "><i class="fab fa-instagram "></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1 " style="background-color: #0082ca; " href="#! " role="button "><i class="fab fa-linkedin-in "></i
+                ></a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1 " style="background-color: #333333; " href="#! " target="_blank " role="button "><i class="fab fa-github "></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 text-dark " style="font-weight:bold; background-color: rgba(0, 0, 0, 0.2); ">
+            © 2023 Copyright :
+            <a class="text-dark " href="https://mdbootstrap.com/ ">  Hussin Aiad</a>
+        </div>
+
+
+    </footer>
+    <br>
+
+    <!-- ................................ -->
+
+    <div id="div "></div>
+
+
+    <!-- MBD JS -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js " integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3 " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js " integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD " crossorigin="anonymous "></script>
+</body>
+
+</html>
